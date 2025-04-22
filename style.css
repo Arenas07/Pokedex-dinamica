@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(to bottom, #bfdbfe, #ffffff) no-repeat;
+}
+
+.cl-black{
+    color: #1f2937;
+}
+
+.cl-gray{
+    color: #6b7280;
+}
+
+.bg-white{
+    background-color: #fff;
+}
+
+.bg-blue{
+    background-color: #3b82f6;
+}
+
+.brd-radius{
+    border-radius: 10px;
+}
+
+.drop-shadow{
+    box-shadow: 0px 4px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+    gap: 10px;
+    margin-bottom: 2rem;
+}
+
+header h1{
+    font-size: 2.5rem;
+}
+
+#form-container{
+    width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100px;
+    width: 100%;
+    padding: 20px 50px;
+    margin-bottom: 2.3rem;
+}
+
+#formulary{
+    display: flex;
+    gap: 20px;
+}
+
+input{
+    height: 50px;
+    width: 300px;
+    padding-left: 10px;
+    font-size: 1rem;
+}
+
+#submit-button{
+    width: 80px;
+    font-size: 1rem;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: .2s;
+}
+
+#submit-button:hover{
+    background-color: #2563eb;
+}
+
+input::placeholder{
+    font-size: 1rem;
+    
+}
+
+#pokemon-container{
+    background-color: red;
+    width: 100%;
+}
+
+#pokemon-container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
