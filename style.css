@@ -42,13 +42,30 @@ header{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 4rem;
+    margin-top: 3rem;
     gap: 10px;
     margin-bottom: 2rem;
 }
 
 header h1{
     font-size: 2.5rem;
+}
+
+a{
+    text-decoration: none;
+    
+}
+
+#additional-information{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#p-info-header{
+    text-align: center;
+    font-size: 0.8rem;
 }
 
 #form-container{
