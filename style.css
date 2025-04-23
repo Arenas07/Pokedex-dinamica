@@ -5,12 +5,12 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-body{
+body {
     min-height: 100vh;
     display: flex;
     align-items: center;
     flex-direction: column;
-    background: linear-gradient(to bottom, #bfdbfe, #ffffff) no-repeat;
+    background:#bfdbfe no-repeat;
 }
 
 .cl-black{
@@ -67,9 +67,18 @@ a{
     text-align: center;
     font-size: 0.8rem;
 }
+/***************************************/
 
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 80px;
+}
 #form-container{
-    width: 1200px;
+    max-width: 1000px;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -82,6 +91,8 @@ a{
 #formulary{
     display: flex;
     gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 input{
@@ -110,13 +121,65 @@ input::placeholder{
 }
 
 #pokemon-container{
-    background-color: red;
-    width: 100%;
+    max-width: 80%;
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 #pokemon-container{
     width: 100%;
     display: flex;
+    gap: 20px;
     flex-direction: row;
     flex-wrap: wrap;
+}
+
+/******************************/
+
+.pokemon-card {
+    width: 250px;
+    margin: 10px;
+    padding: 15px 10px 10px 10px;
+    background-color: #f9fafb;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+    transition: transform 0.2s ease;
+}
+
+.pokemon-card:hover {
+    transform: translateY(-5px);
+}
+
+.pokemon-card img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 5px;
+}
+
+.button-delete {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background-color: pink; 
+    border: none;
+    color: white;
+    font-size: 1rem;
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.2s ease;
+}
+
+.button-delete:hover {
+    background-color: #dc2626;
 }

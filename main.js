@@ -5,6 +5,7 @@ function obtenerId(id){
 
 const formulario = obtenerId("formulary")
 const contenedorPokemon = obtenerId("pokemon-container")
+const eliminar = obtenerId("eliminar-pokemon")
 
 formulario.addEventListener("submit", (event) =>{
     event.preventDefault()
@@ -16,14 +17,21 @@ formulario.addEventListener("submit", (event) =>{
 
     divPokemon.innerHTML= 
     `
-    <button> ❌ </button>
-    <img src="${imagenPokemon}" alt="${nombrePokemon}" onerror="this.src='https://placehold.co/600x400?text=Not+found'" id="pokemon-image">
-    <h3>${nombrePokemon}</h3>
+    <div class="pokemon-card">
+        <button class="button-delete" id="eliminar-pokemon">❌</button>
+        <img src="${imagenPokemon}" alt="${nombrePokemon}" onerror="this.src='https://placehold.co/600x400?text=Not+found'" class="pokemon-image">
+        <h3>${nombrePokemon}</h3>
+    </div>
     `
-
+    const btnEliminar = divPokemon.querySelector(".button-delete")
+    btnEliminar.addEventListener("click", () => {
+        divPokemon.remove()
+    })
     contenedorPokemon.appendChild(divPokemon)
     
     formulario.reset()
     
 })
+
+
 
